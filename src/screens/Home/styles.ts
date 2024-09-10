@@ -5,8 +5,8 @@ export const styles = StyleSheet.create({
     flex: 1,
   },
   image: {
-    flex: 1,
-    width: '100%',
-    backgroundColor: '#0553',
-  }
+    width: 200,
+    height: 200,
+    backgroundColor: "#0553",
+  },
 });
