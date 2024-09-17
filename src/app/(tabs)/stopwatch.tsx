@@ -1,11 +1,7 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 
-export default function Tab() {
-  return (
-    <View style={styles.container}>
-      <Text>Tab</Text>
-    </View>
-  );
+export default function Stopwatch() {
+  return <View style={styles.container}></View>;
 }
 
 const styles = StyleSheet.create({
@@ -13,5 +9,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "#000",
   },
 });
