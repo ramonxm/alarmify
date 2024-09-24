@@ -1,13 +1,17 @@
-import { View, StyleSheet } from "react-native";
+import { ActionBar } from "@/components/ActionBar";
+import { View, StyleSheet, SafeAreaView } from "react-native";
 
 export default function Alarm() {
-  return <View style={styles.container}></View>;
+  return (
+    <SafeAreaView style={styles.container}>
+      <ActionBar />
+    </SafeAreaView>
+  );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    backgroundColor: "#000",
   },
 });
