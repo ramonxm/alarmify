@@ -8,6 +8,7 @@ import * as SplashScreen from "expo-splash-screen";
 import "react-native-reanimated";
 import { useColorScheme } from "../hooks/useColorScheme";
 import { useEffect } from "react";
+import { StatusBar } from "react-native";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -20,6 +21,7 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
+      <StatusBar barStyle="default" />
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       </Stack>
