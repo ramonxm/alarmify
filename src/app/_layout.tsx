@@ -1,7 +1,6 @@
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import "react-native-reanimated";
-import { useColorScheme } from "../hooks/useColorScheme";
 import { useEffect } from "react";
 import { StatusBar } from "react-native";
 import { useFonts } from "expo-font";
@@ -11,8 +10,6 @@ import { ThemeProvider } from "@shopify/restyle";
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
-
   const [loaded, error] = useFonts({
     "Inter-Black": require("../assets/fonts/Inter/Inter-Black.ttf"),
     "Inter-Thin": require("../assets/fonts/Inter/Inter-Thin.ttf"),

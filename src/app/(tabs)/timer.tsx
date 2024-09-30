@@ -1,17 +1,5 @@
-import { ActionBar } from "@/components/ActionBar";
-import { StyleSheet, SafeAreaView } from "react-native";
+import { TimerScreen } from "@/screens/Timer";
 
 export default function Timer() {
-  return (
-    <SafeAreaView style={styles.container}>
-      <ActionBar />
-    </SafeAreaView>
-  );
+  return <TimerScreen />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#000",
-  },
-});

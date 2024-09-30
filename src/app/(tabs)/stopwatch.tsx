@@ -1,17 +1,3 @@
-import { ActionBar } from "@/components/ActionBar";
-import { StyleSheet, SafeAreaView } from "react-native";
-
 export default function Stopwatch() {
-  return (
-    <SafeAreaView style={styles.container}>
-      <ActionBar />
-    </SafeAreaView>
-  );
+  return <Stopwatch />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#000",
-  },
-});
