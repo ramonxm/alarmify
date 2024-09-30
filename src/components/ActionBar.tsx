@@ -5,7 +5,9 @@ import { Plus } from "@/assets/svgs/Plus";
 export const ActionBar = () => {
   return (
     <View style={styles.container}>
-      <ThemedText style={styles.text}>Done</ThemedText>
+      <TouchableOpacity>
+        <ThemedText style={styles.text}>Done</ThemedText>
+      </TouchableOpacity>
       <TouchableOpacity>
         <Plus />
       </TouchableOpacity>
