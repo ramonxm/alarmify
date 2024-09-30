@@ -1,12 +1,12 @@
-import { StyleSheet, TouchableOpacity, View } from "react-native";
-import { ThemedText } from "./ThemedText";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+
 import { Plus } from "@/assets/svgs/Plus";
 
 export const ActionBar = () => {
   return (
     <View style={styles.container}>
       <TouchableOpacity>
-        <ThemedText style={styles.text}>Done</ThemedText>
+        <Text style={styles.text}>Done</Text>
       </TouchableOpacity>
       <TouchableOpacity>
         <Plus />

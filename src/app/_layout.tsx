@@ -1,8 +1,3 @@
-import {
-  DarkTheme,
-  DefaultTheme,
-  ThemeProvider,
-} from "@react-navigation/native";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import "react-native-reanimated";
@@ -10,6 +5,8 @@ import { useColorScheme } from "../hooks/useColorScheme";
 import { useEffect } from "react";
 import { StatusBar } from "react-native";
 import { useFonts } from "expo-font";
+import theme from "@/styles/theme";
+import { ThemeProvider } from "@shopify/restyle";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -39,7 +36,7 @@ export default function RootLayout() {
   }
 
   return (
-    <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
+    <ThemeProvider theme={theme}>
       <StatusBar barStyle="default" />
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
